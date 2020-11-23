@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+
+  <category><pattern>Heya</pattern><template><srai>HI</srai></template></category>
+  <category><pattern>Hola</pattern><template><srai>HI</srai></template></category> 
+  <category><pattern>Hey</pattern><template><srai>HI</srai></template></category>
+  <category><pattern>Hello</pattern><template><srai>HI</srai></template></category>
+  
+  <category>
+      <pattern>Hi</pattern>
+      
+      <template>Hi there, nice to meet you. I'm the Computer Science Career Bot. If you'd like to learn about careers click "Careers" if you need click "Help"
+      
+      <button>
+          <text>Careers</text>
+          <postback>careers</postback>
+      </button>
+    
+      <button>
+          <text>Help</text>
+          <postback>help</postback>
+      </button>
+    
+      </template>
+  </category>
+
+  <category>
+      <pattern>*</pattern>
+      
+      <template> I'm sorry I didn't understand that. Do you want me to learn about different computer science careers? If so click "Careers" otherwise click "Help".
+      
+      <button>
+          <text>Careers</text>
+          <postback>careers</postback>
+      </button>
+    
+      <button>
+          <text>Help</text>
+          <postback>help</postback>
+      </button>
+      
+      </template>
+  </category>
+  
+  <catagory>
+      <pattern>help</pattern>
+      
+      <template>Hi I'm the Career Bot. I'm here to help you find your perfect career. I will ask a series of questions and present the best fitting career. Please click "Careers" to get started.
+      
+      <button>
+          <text>Careers</text>
+          <postback>careers</postback>
+      </button>
+      
+      </template>
+  </catagory>
+
+  <category>
+      <pattern>careers</pattern>
+      <template>Okay, let me ask you a couple of questions about your likes and dislikes. After I'm done I'll recomment a career to you. To start click "Start"
+      
+      <button>
+          <text>Start</text>
+          <postback>start</postback>
+      </button>
+      </template>
+  </category>
+  
+  <category>
+      <pattern>start</pattern>
+      <template>Do you like working with infrastructure (servers, active directory, firewalls etc), do you like to code or are you more interested in designing solutions? 
+      Click "Infra" for infrastructure, "Code" for code, and "Design" for design and architecture.
+      
+      <button>
+          <text>infra</text>
+          <postback>infra</postback>
+      </button>
+      
+      <button>
+          <text>code</text>
+          <postback>code</postback>
+      </button>
+      
+      <button>
+          <text>design</text>
+          <postback>design</postback>
+      </button>
+      
+      </template>
+  </category>
+  
+  <category>
+      <pattern>design</pattern>
+      <template>Do you like designed server and networking solutions or software solutions? Click "Server Design" for server and networking or "Software Design" for software solutions
+      
+      <button>
+          <text>Server Design</text>
+          <postback>server design</postback>
+      </button>
+      
+      <button>
+          <text>software design</text>
+          <postback>software design</postback>
+      </button>
+      
+      </template>
+  </category>
+  
+  <category>
+      <pattern>server design</pattern>
+      <template>You'd make a great Infrastructure Architect. Click here for more information
+      
+      <button>
+          <text>More Info - Infrastructure Architect</text>
+          <postback></postback>
+      </button>
+      </template>
+  </category>
+  
+  <category>
+      <pattern>software design</pattern>
+      <template>You'd made a great software designer. Click here for more information about this career.
+      
+      <button>
+          <text>More Info - Software Design</text>
+          <postback></postback>
+      </button>
+      </template>
+  </category>
+  <category>
+      <pattern>infra</pattern>
+      <template>So you like infrastructure. Do you like working with networking equipment or server and hosts more? 
+      Network for networking and Servers for servers/hosts.
+      
+      <button>
+          <text>Network</text>
+          <postback>network</postback>
+      </button>
+      
+      <button>
+          <text>Servers</text>
+          <postback>servers</postback>
+      </button>
+      
+      </template>
+  </category>
+  
+  <category>
+      <pattern>network</pattern>
+      <template>The perfect career for you is a Network Engineer. Pleaes click here for more information about this career.
+      
+      <button>
+          <text>More Info - Network Engineer</text>
+          <postback></postback>
+      </button>
+      
+      </template>
+  </category>
+  
+  <category>
+      <pattern>servers</pattern>
+      <template>The perfect career for you is a System Admin. Please click here for more information about this career
+      
+      <button>
+          <text>System Admin</text>
+          <postback></postback>
+      </button>
+      
+      </template>
+  </category>
+  
+  <category>
+      <pattern>code</pattern>
+      <template>Do you like working as part of a team building applications or would you rather use code to automate scaling of large applications? 
+      Click App for Application Developer and Scaling for Cloud Engineer.
+      
+      <button>
+          <text>Application Developer</text>
+          <postback>app</postback>
+      </button>
+      
+      <button>
+          <text>Cloud Engineer</text>
+          <postback>scaling</postback>
+      </button>
+      
+      </template>
+  </category>
+  
+  <category>
+      <pattern>app</pattern>
+      <template>The perfect career for you is an application developer! Click here to get more information about this career.
+      
+      <button>
+          <text>More Info - Application Dev</text>
+          <postback></postback>
+      </button>
+      
+      <button>
+          <text></text>
+          <postback></postback>
+      </button>
+      
+      </template>
+  </category>
+  
+  <category>
+      <pattern>scaling</pattern>
+      <template>Your best fit job is a Cloud Engineer. Click here for more info.
+      
+      <button>
+          <text>More Info - Cloud Engineer</text>
+          <postback></postback>
+      </button>
+      
+      <button>
+          <text>Click here for other Careers</text>
+          <postback>other careers</postback>
+      </button>
+      
+      </template>
+  </category>
+
+</aiml>
